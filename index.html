@@ -178,85 +178,71 @@
 	<!--About(end)-->
 
 	<!--Achievement(start)-->
-	<table id="achievements" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center" valign="middle">
-							<font face="Verdana" size="7" color="#4CAF50">
-								Achievements
-								<hr color="#4CAF50" width="100">
-							</font>
-						</td>
-					</tr>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
-					<tr>
-						<td>
-							<font face="Verdana" size="4" color="white">
-								<ul>
-									<li>
-										<b>Intern at GeeksforGeeks.</b>
-										<ul>
-											<li>
-												December,2020 - Present.
-											</li>
-											<li>
-												Write technical articles 
-												on programming related topics.
-											</li>
-										</ul>
-									</li>
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
 
-									<li>
-										<hr color="black">
-										<hr color="black">
-										<hr color="black">
-										<b>Microsoft Learn Student Ambassador.</b>
-										<ul>
-											<li>
-												August,2020 - Present.
-											</li>
-											<li>
-												Conducted events and workshops on
-												different technologies.
-											</li>
-										</ul>
-									</li>
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
 
-									<li>
-										<hr color="black">
-										<hr color="black">
-										<hr color="black">
-										<b>Mentored HackTX.</b>
-										<ul>
-											<li>
-												October,2020.
-											</li>
-											<li>
-												Selected from Microsoft as Student
-												ambassador where I mentored students
-												in their projects.
-											</li>
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-										</ul>
-									</li>
+<h2>Accordion</h2>
 
-								</ul>
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-							</font>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
 	<!--Achievement(end)-->
 
 
