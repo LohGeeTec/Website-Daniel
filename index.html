@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0">
-	<title>Daniel's Portfolio</title>
-</head>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   margin: 0;
+  font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topnav {
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
   overflow: hidden;
   background-color: #333;
 }
 
-.topnav a {
+#navbar a {
   float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -29,111 +30,73 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
+#navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav a.active {
+#navbar a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 </style>
 </head>
 <body>
 
-<div class="topnav">
-  <a class="active" href="#Halaman Utama">Halaman Utama</a>
-  <a href="#Tentang">Tentang</a>
-  <a href="#Prestasi">Prestasi</a>
-	<a href="#Organisasi">Organisasi</a>
-  <a href="#Kontak">Kontak</a>
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
 </div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+
+<div class="content">
+  <h3>Sticky Navigation Example</h3>
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 <body>
-	<!--Header(start)-->
-	<table id="header" border="0"
-		width="100%" cellpadding="0"
-		cellspacing="0" bgcolor="#4CAF50">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%"
-					align="center">
-					<tr>
-						<td>
-							
-
-						</td>
-
-						<td>
-							<font face="Comic sans MS" size="6">
-								<b>D.N.R.B.N.S.R</b>
-							</font>
-						</td>
-
-						<td width="15%">
-							
-						</td>
-
-						<td>
-							<a href="#home"
-							style="text-decoration:none">
-								<font face="Verdana"
-									size="5" color=black>
-									Halaman Utama
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#about"
-							style="text-decoration:none">
-								<font face="Verdana"
-									size="5" color=black>
-									Tentang
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#Achievement"
-							style="text-decoration:none">
-								<font face="Verdana"
-									size="5" color=black>
-									Prestasi
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#Galeri"
-							style="text-decoration:none">
-								<font face="Verdana"
-									size="5" color=black>
-									Galeri
-								</font>
-							</a>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Header(end)-->
-
 	<!--Home(start)-->
 	<table id="home" border="1" width="100%"
 		cellpadding="20" cellspacing="0" bgcolor="black">
