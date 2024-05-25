@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .hero-image {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("heroimage.jpg");
+          height: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+        
+        .hero-text button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 10px 25px;
+          color: black;
+          background-color: #ddd;
+          text-align: center;
+          cursor: pointer;
+        }
+        
+        .hero-text button:hover {
+          background-color: #555;
+          color: white;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 style="font-size:50px">Daniel Robinsar</h1>
+            <p>Seorang Pemimpi Besar</p>
+          </div>
+        </div>
+    </body>
+
+<div id="navbar">
+  <a href="index.html">Tentang Saya</a>
+  <a href="prestasi.html">Prestasi</a>
+  <a href="kontak.html">Kontak</a>
+  <a class="active" href="galeri.html">Galeri</a>
+</div>
+<head>
+  <style>
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+  </head>
+  <body>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imga.jpg">
+        <img src="imga.jpg" alt="OKSxPanjiSakti" width="600" height="400">
+      </a>
+      <div class="desc">OKS x Panji Sakti, 14/05/24</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imgb.jpg">
+        <img src="imgb.jpg" alt="OKSxGheaIndrawari" width="600" height="400">
+      </a>
+      <div class="desc">OKS x Ghea Indrawari, 24/04/2024</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imgc.jpg">
+        <img src="imgc.jpg" alt="GBN24" width="600" height="400">
+      </a>
+      <div class="desc">Audisi Gita Bahana Nusantara Banten, 07/05/24</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imgd.jpg">
+        <img src="imgd.jpg" alt="Padusharkitnas" width="600" height="400">
+      </a>
+      <div class="desc">Paduan Suara Hari Kebangkitan Nasional, 20/05/24</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imge.jpg">
+        <img src="imge.jpg" alt="FLS2N2023" width="600" height="400">
+      </a>
+      <div class="desc">Juara 2 FLS2N Provinsi Banten, 12/07/23</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imgf.jpg">
+        <img src="imgf.jpg" alt="BGR1" width="600" height="400">
+      </a>
+      <div class="desc">Banten Guitar Rhapsody, 13/12/2024</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imgg.JPG">
+        <img src="imgg.JPG" alt="KPI23" width="600" height="400">
+      </a>
+      <div class="desc">Kebaktian Penyegaran Iman, 13/08/23</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="imgh.jpg">
+        <img src="imgh.jpg" alt="Bandtar" width="600" height="400">
+      </a>
+      <div class="desc">Perpisahan SMAN 3, 2023</div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  </body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
